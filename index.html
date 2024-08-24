@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='./src/style.css'>
+        <title>Age Calculator App - Challange</title>
+    </head>
+    
+    <body>
+        <section class="main">
+            <div class="container">
+
+                <form id="age-form">
+
+                    <div class="input-container">
+                        <div class="input">
+                            <label>Day</label>
+                            <input id="day" name="day" type="number" min="1" max="31" placeholder="DD">
+                        </div>
+                        <div class="input">
+                            <label>Month</label>
+                            <input id="month" name="month" type="number" min="1" max="12" placeholder="MM">
+                        </div>
+                        <div class="input">
+                            <label>Year</label>
+                            <input id="year" name="year" type="number" min="1900" max="2022" placeholder="YYYY">
+                        </div>
+                    </div>
+    
+                    <div class="btn-container">
+                        <button id="btn-calculate" type="submit" ><img src="./assets/images/icon-arrow.svg" alt="Calculate!" width="40px"></button>
+                    </div>
+
+                </form>
+
+                <div class="output-container">
+                    <div class="output-label">
+                        <p id="years">43</p>
+                        <p id="label">years</p>
+                    </div>
+                    <div class="output-label">
+                        <p id="months">3</p>
+                        <p id="label">months</p>
+                    </div>
+                    <div class="output-label">
+                        <p id="days">31</p>
+                        <p id="label">days</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <script src="./src/script.js"></script>
+    </body>
+</html>
